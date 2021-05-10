@@ -23,7 +23,9 @@ Flutter App with free downloads and other good stuff
 ![Screenshot_20210510-201444](https://user-images.githubusercontent.com/79440952/117684743-e64d3480-b1d2-11eb-930c-b13aa6008d89.jpg)
 ### Top Picks:
 ![Screenshot_20210510-201747](https://user-images.githubusercontent.com/79440952/117684856-041a9980-b1d3-11eb-9d02-0ab21805ebda.jpg)
-
+## Downloads
+### Android:
+[Initial Beta Release](https://github.com/xobe19/RythmMusic/releases/download/1.0.0/app-release.apk)
 
 
 
