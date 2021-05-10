@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">Rythm Music</string>
+  <string name="facebook_app_id">454783399082296</string>
+  <string name="fb_login_protocol_scheme">fb454783399082296</string>
+  </resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "3055511017",
+    "project_id": "rythm-music-199d2",
+    "storage_bucket": "rythm-music-199d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3055511017:android:0495d51251c3234e2a1778",
+        "android_client_info": {
+          "package_name": "com.xobe19.rythm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3055511017-coq9vh47e632eolatqd9s8d1oo0ag4mn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xobe19.rythm",
+            "certificate_hash": "31d4a0a68db0b82d3395af2403653c1010fc51c5"
+          }
+        },
+        {
+          "client_id": "3055511017-n3fmifg9g9lel2v0jka6gaqk8pan93dn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDrHI4OE01UFFNPQfZyvfEEgPYXUx5FR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3055511017-n3fmifg9g9lel2v0jka6gaqk8pan93dn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
