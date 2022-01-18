@@ -12,24 +12,24 @@ Flutter App with free downloads and other good stuff
 
 ## Screenshots:
 ### Home Screen:
-<img src="https://user-images.githubusercontent.com/79440952/117683796-0af4dc80-b1d2-11eb-9f73-97413cf0f846.jpg" height="720" width="360">
+<img src="https://user-images.githubusercontent.com/79440952/117683796-0af4dc80-b1d2-11eb-9f73-97413cf0f846.jpg" height="480" width="240">
 
 ### Login Screen: 
-<img src="https://user-images.githubusercontent.com/79440952/117683965-2f50b900-b1d2-11eb-98eb-4d7169798a0c.jpg" height="720" width="360">
+<img src="https://user-images.githubusercontent.com/79440952/117683965-2f50b900-b1d2-11eb-98eb-4d7169798a0c.jpg" height="480" width="240">
 
 ### Library Screen:
-<img src="https://user-images.githubusercontent.com/79440952/117684173-5dce9400-b1d2-11eb-8ac8-5765dff7e18b.jpg" height="720" width="360">
+<img src="https://user-images.githubusercontent.com/79440952/117684173-5dce9400-b1d2-11eb-8ac8-5765dff7e18b.jpg" height="480" width="240">
 
 ### Song Screen:
-<img src="https://user-images.githubusercontent.com/79440952/117684655-d2a1ce00-b1d2-11eb-83f8-74cdd16c35ee.jpg" height="720" width="360">
+<img src="https://user-images.githubusercontent.com/79440952/117684655-d2a1ce00-b1d2-11eb-83f8-74cdd16c35ee.jpg" height="480" width="240">
 
 
 ### Playlists Screen:
-<img src="https://user-images.githubusercontent.com/79440952/117684743-e64d3480-b1d2-11eb-930c-b13aa6008d89.jpg" height="720" width="360">
+<img src="https://user-images.githubusercontent.com/79440952/117684743-e64d3480-b1d2-11eb-930c-b13aa6008d89.jpg" height="480" width="240">
 
 
 ### Top Picks:
-<img src="https://user-images.githubusercontent.com/79440952/117684856-041a9980-b1d3-11eb-9d02-0ab21805ebda.jpg" height="720" width="360">
+<img src="https://user-images.githubusercontent.com/79440952/117684856-041a9980-b1d3-11eb-9d02-0ab21805ebda.jpg" height="480" width="240">
 
 ## Downloads
 ### Android:
