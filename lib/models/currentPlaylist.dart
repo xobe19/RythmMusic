@@ -1,31 +1,39 @@
+import 'dart:typed_data';
+
 import 'package:audioplayer/audioplayer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:des_plugin/des_plugin.dart';
 import '../api/api.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:des_plugin/des_plugin.dart';
+import 'package:flutter_des/flutter_des.dart';
 import '../models/getSongsInPlaylist.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../models/doesSongExistinPlaylist.dart';
 import 'package:locally/locally.dart';
 import '../screens/songScreen.dart';
 import '../screens/downloadSongScreen.dart';
+
 const String key = '38346591';
 
 class CurrentPlaylist extends ChangeNotifier {
-	var fromDownload;
-	var context;
-	var locally;
-	CurrentPlaylist(BuildContext ctx) {
-     this.context = ctx;
-  this.locally = Locally(context: context, pageRoute: MaterialPageRoute(builder: (BuildContext context) {
-	  if(fromDownload==true) {
-		  return DownloadSongScreen(); 
-	  }
-	  return SongScreen();
-  }), appIcon: 'mipmap/ic_launcher', payload: 'test', );
-	}
+  var fromDownload;
+  var context;
+  var locally;
+  CurrentPlaylist(BuildContext ctx) {
+    this.context = ctx;
+    this.locally = Locally(
+      context: context,
+      pageRoute: MaterialPageRoute(builder: (BuildContext context) {
+        if (fromDownload == true) {
+          return DownloadSongScreen();
+        }
+        return SongScreen();
+      }),
+      appIcon: 'mipmap/ic_launcher',
+      payload: 'test',
+    );
+  }
   int downloadLength;
   List snpsht;
   String playlistId;
@@ -87,11 +95,33 @@ class CurrentPlaylist extends ChangeNotifier {
   }
 
   Future<String> getDecryptedUrl() async {
+    print(
+        "-=======================================================================");
+    print(this.jsonData['songs'][this.currentPlaying]['encrypted_media_url']);
+    print(
+        "-=======================================================================");
+
     return DesPlugin.decrypt(key,
         this.jsonData['songs'][this.currentPlaying]['encrypted_media_url']);
   }
 
-  Future<String> getDecryptedUrlWithString(String enc) async {
-    return DesPlugin.decrypt(key, enc);
+  Future<String> getDecryptedUrlWithString(String source) async {
+    var list = new List<int>();
+    source.runes.forEach((rune) {
+      if (rune >= 0x10000) {
+        rune -= 0x10000;
+        int firstWord = (rune >> 10) + 0xD800;
+        list.add(firstWord >> 8);
+        list.add(firstWord & 0xFF);
+        int secondWord = (rune & 0x3FF) + 0xDC00;
+        list.add(secondWord >> 8);
+        list.add(secondWord & 0xFF);
+      } else {
+        list.add(rune >> 8);
+        list.add(rune & 0xFF);
+      }
+    });
+    Uint8List bytes = Uint8List.fromList(list);
+    return DesPlugin.decrypt(key, source);
   }
 }
